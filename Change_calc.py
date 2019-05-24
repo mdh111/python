@@ -7,29 +7,27 @@ print("Balance:", balance)
 fifty=int(balance/50)
 if fifty>0:
     print("£50:",fifty)
-    balance=balance-(fifty*50)
+    balance=balance%50
 
 twenty=int(balance/20)
 if twenty>0:
     print("£20:",twenty)
-    balance=balance-(twenty*20)
+    balance=balance%20
 
 ten=int(balance/10)
 if ten>0:
     print("£10:",ten)
-    balance=balance-(ten*10)
+    balance=balance%10
 
 five=int(balance/5)
 if five>0:
     print("£5:",five)
-    balance=balance-(five*5)
+    balance=balance%5
 
 two=int(balance/2)
 if two>0:
     print("£2:",two)
-    balance=balance-(two*2)
+    balance=balance%2
 
-one=int(balance/1)
-if one>0:
-    print("£1:",one)
-    balance=balance-(one*1)
+if balance>0:
+    print("£1:",balance)
