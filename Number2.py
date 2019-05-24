@@ -1,4 +1,4 @@
-number=int(input("Enter a number:"))
+number=int(input("Enter number:"))
 if number>1000:
 	print("B")
 	if number>2000:
