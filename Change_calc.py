@@ -4,7 +4,7 @@ balance=paidAmount-billAmount
 
 print("Balance:", balance)
 
-fifty=int(balance/50) 
+fifty=int(balance/50) # 
 if fifty>0:
     print("£50:",fifty)
     balance=balance%50
