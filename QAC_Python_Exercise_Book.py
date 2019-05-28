@@ -14,4 +14,7 @@ elif myBoolean==True:
 else:
     result=number1*number2
 
-print(result)
+i=1
+while i<=10:
+    print(result)
+    i += 1
