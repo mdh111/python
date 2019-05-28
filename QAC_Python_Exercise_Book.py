@@ -13,8 +13,11 @@ elif myBoolean==True:
     result=number1+number2
 else:
     result=number1*number2
+print(result)
 
 i=1
+myList=[]
 while i<=10:
-    print(result)
+    myList.append(i)
     i += 1
+print(myList)
