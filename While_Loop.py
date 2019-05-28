@@ -1,3 +1,5 @@
+import time
+
 count=1
 while count<=10:
     print("hello")
@@ -15,3 +17,4 @@ count=1
 while count<=number2:
     print(number,"x",count,"=",(number*count))
     count+=1
+    time.sleep(1)
