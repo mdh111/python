@@ -6,6 +6,8 @@ def change(message):
             newMessage += chr(ord(message[i])+32)
         elif ord(message[i])>=97 and ord(message[i])<=122:
             newMessage += chr(ord(message[i])-32)
+        elif ord(message[i])>=48 and ord(message[i])<=57:
+            newMessage += str(int(message[i])*2)
         else:
             newMessage += message[i]
         i+=1
