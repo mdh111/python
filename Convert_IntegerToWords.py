@@ -66,7 +66,10 @@ def convertThreeDigitNumber(num):
     result = ""
     result += convertSingle(int(myNum[0]))
     result += " hundred "
-    result += convertTwoDigitNumber(int(myNum[1:3]))
+    if int(myNum[1])>0:
+        result += convertTwoDigitNumber(int(myNum[1:3]))
+    else:
+        result += convertSingle(int(myNum[2]))
     return result
 
 def convertFourDigitNumber(num):
@@ -74,7 +77,10 @@ def convertFourDigitNumber(num):
     result = ""
     result += convertSingle(int(myNum[0]))
     result += " thousand "
-    result += convertThreeDigitNumber(int(myNum[1:4]))
+    if int(myNum[2])>0:
+        result += convertThreeDigitNumber(int(myNum[1:4]))
+    else:
+        result += convertSingle(int(myNum[3]))
     return result
 
 def convertNumber(num):
