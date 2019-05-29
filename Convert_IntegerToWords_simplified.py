@@ -75,11 +75,11 @@ def convertNumber(num):
         result+=convertSingle(int(num/100)) + " hundred "
         num%=100
     if num>=20:
-        result+=convertDouble(int(num/10)*10)
+        result+=convertDouble(int(num/10)*10) + " "
         num%=10
     if num>0 and num<=19:
         result+=convertSingle(num)
-    return result
+    print(result)
 
-
-print(convertNumber(int(input("Enter a number 0-9999:"))))
+num=int(input("Enter a number 0-9999:"))
+convertNumber(num)
