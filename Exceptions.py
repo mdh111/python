@@ -3,11 +3,11 @@ try:
     no2=int(input("Enter second number:"))
     result=no1/no2
     print(result)
-except ZeroDivisionError:
-    print("You can't divide by zero")
-except ValueError:
-    print("Only enter digits")
-except Exception:
-    print("General error")
+#except ZeroDivisionError:
+#    print("You can't divide by zero")
+#except ValueError:
+#    print("Only enter digits")
+except Exception as e:
+    print(e.message)
 finally:
     print("Goodbye!")
