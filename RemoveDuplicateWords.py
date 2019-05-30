@@ -1,4 +1,4 @@
-msg=input("Enter a message:")
+msg=input("Enter a message to remove duplicate words:")
 msg=msg+" "
 myList=[]
 word=""
