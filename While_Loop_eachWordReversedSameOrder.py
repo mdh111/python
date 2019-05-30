@@ -15,7 +15,10 @@ while i<len(msg):
     if msg[i]!=" ":
         word += msg[i]
     else:
-        newMsg = newMsg + " " + reverseWord(word)
+        if newMsg=="":
+            newMsg = reverseWord(word)
+        else:
+            newMsg = newMsg + " " + reverseWord(word)
         word=""
     i += 1
 print(newMsg + " " + reverseWord(word))
